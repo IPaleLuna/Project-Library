@@ -46,12 +46,12 @@ public class Book implements Comparable<Book> {
     @Override
     public int compareTo(Book other) {
         int nameCompare = this.name.compareTo(other.name);
-        if(nameCompare != 0){
+        if (nameCompare != 0) {
             return nameCompare;
         }
 
         int pageCountCompare = Integer.compare(this.pageCount, other.pageCount);
-        if(pageCountCompare != 0){
+        if (pageCountCompare != 0) {
             return pageCountCompare;
         }
 
@@ -60,16 +60,14 @@ public class Book implements Comparable<Book> {
 
     @Override
     public boolean equals(Object obj) {
-        if(this == obj){
+        if (this == obj) {
             return true;
         }
-        if( obj == null || getClass() != obj.getClass()){
+        if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
         Book book = (Book) obj;
-        return pageCount == book.pageCount &&
-                publicationYear == book.publicationYear &&
-                Objects.equals(name, book.name);
+        return pageCount == book.pageCount && publicationYear == book.publicationYear && Objects.equals(name, book.name);
     }
 
     @Override
