@@ -25,3 +25,4 @@ replay_pid*
 
 .vscode/
 /src/main/java/org/example/PaleLuna
+src/main/java/org/example/app/App.java
