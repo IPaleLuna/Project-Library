@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example.app;
 
 public class Main {
     public static void main(String[] args) throws Exception {
