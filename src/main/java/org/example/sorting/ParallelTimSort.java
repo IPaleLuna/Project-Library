@@ -4,9 +4,8 @@ import java.util.*;
 import java.util.concurrent.*;
 
 public class ParallelTimSort<T extends Comparable<? super T>> implements Sort<T> {
-
     private final ForkJoinPool pool;
-    private static final int MIN_RUN = 32; // стандартный параметр TimSort
+    private static final int MIN_RUN = 32;
 
     public ParallelTimSort() {
         this(2);
@@ -48,7 +47,6 @@ public class ParallelTimSort<T extends Comparable<? super T>> implements Sort<T>
             int n = list.size();
             if (n <= 1) return new ArrayList<>(list);
 
-            // 1️⃣ Разбиваем на "runs"
             List<List<T>> runs = new ArrayList<>();
             for (int i = 0; i < n; i += MIN_RUN) {
                 int end = Math.min(i + MIN_RUN, n);
@@ -57,7 +55,6 @@ public class ParallelTimSort<T extends Comparable<? super T>> implements Sort<T>
                 runs.add(subList);
             }
 
-            // 2️⃣ Параллельно сливаем runs
             while (runs.size() > 1) {
                 List<ForkJoinTask<List<T>>> mergeTasks = new ArrayList<>();
 
@@ -67,7 +64,6 @@ public class ParallelTimSort<T extends Comparable<? super T>> implements Sort<T>
                         List<T> right = runs.get(i + 1);
                         mergeTasks.add(new MergeTask<>(left, right, comparator).fork());
                     } else {
-                        // Нечётный элемент — просто завернуть в ForkJoinTask без forking
                         List<T> last = runs.get(i);
                         mergeTasks.add(ForkJoinTask.adapt(() -> last));
                     }
