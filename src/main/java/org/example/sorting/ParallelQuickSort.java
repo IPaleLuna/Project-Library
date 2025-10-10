@@ -7,14 +7,11 @@ public class ParallelQuickSort<T extends Comparable<? super T>> implements Sort<
     private final ForkJoinPool pool;
 
     public ParallelQuickSort() {
-        this(Runtime.getRuntime().availableProcessors());
+        this(2);
     }
 
     public ParallelQuickSort(int threadCount) {
-        if (threadCount <= 0) {
-            throw new IllegalArgumentException("Thread count must be greater than zero.");
-        }
-        this.pool = new ForkJoinPool(threadCount);
+        this.pool = new ForkJoinPool( Math.max(threadCount, 2));
     }
 
     @Override
@@ -33,7 +30,7 @@ public class ParallelQuickSort<T extends Comparable<? super T>> implements Sort<
     }
 
     private static class QuickSortTask<T> extends RecursiveAction {
-        private static final int SEQUENTIAL_THRESHOLD = 500;
+        private static final int SEQUENTIAL_THRESHOLD = 50; // Test value
         private final List<T> list;
         private final int low;
         private final int high;
