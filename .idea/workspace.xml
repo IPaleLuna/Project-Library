@@ -5,28 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Reader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/JsonLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/books.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/readers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelQuickSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/SortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/JsonLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/books.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/readers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/books.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/readers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/books.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/readers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collections/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collections/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/temp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sorting/exampleTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelMergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +34,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.Main.executor": "Run",
+    "JUnit.ParallelMergeSortTest.executor": "Run",
     "JUnit.ParallelQuickSortTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -73,6 +53,9 @@
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\java\com\example" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.sorting" />
     </key>
   </component>
   <component name="RunManager">
