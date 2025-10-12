@@ -1,4 +1,4 @@
-package main.java.org.example.search;
+package org.example.search;
 
 public class temp {
 

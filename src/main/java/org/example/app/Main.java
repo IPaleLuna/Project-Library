@@ -1,11 +1,15 @@
 package org.example.app;
 
+import org.example.model.Book;
 import org.example.sorting.ParallelMergeSort;
 import org.example.sorting.ParallelQuickSort;
 
 import org.example.sorting.ParallelTimSort;
 import org.example.sorting.Sort;
+import org.example.util.JsonLoader;
+import tools.jackson.core.type.TypeReference;
 
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -46,5 +50,17 @@ public class Main {
         }
 
         System.out.println();
+
+        File file = new File("src/main/resources/books.json");
+        if (!file.exists()) {
+            System.out.println(file.getAbsolutePath());
+
+            return;
+        }
+        List<Book> books = JsonLoader.loadList(file, new TypeReference<>() {});
+
+
+        books.forEach(System.out::println);
+
     }
 }
