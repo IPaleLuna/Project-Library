@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package org.example.collections;
-=======
-package main.java.org.example.collections;
->>>>>>> b953a2a (Изменена архитектура)
 
 public class temp {
 

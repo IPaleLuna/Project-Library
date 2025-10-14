@@ -14,7 +14,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-<<<<<<< HEAD
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -58,6 +57,4 @@
             </plugin>
         </plugins>
     </build>
-=======
->>>>>>> b953a2a (Изменена архитектура)
 </project>

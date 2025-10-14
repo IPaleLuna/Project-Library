@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 package org.example.search;
-=======
-package main.java.org.example.search;
->>>>>>> b953a2a (Изменена архитектура)
 
 public class temp {
 

@@ -1,20 +1,11 @@
-<<<<<<< HEAD
 package org.example.model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import tools.jackson.databind.annotation.JsonDeserialize;
-import tools.jackson.databind.annotation.JsonPOJOBuilder;
-=======
-package model;
->>>>>>> b953a2a (Изменена архитектура)
 
 import java.util.Comparator;
 import java.util.Objects;
 
-<<<<<<< HEAD
-@JsonDeserialize(builder = Book.Builder.class)
-=======
->>>>>>> b953a2a (Изменена архитектура)
 public class Book implements Comparable<Book> {
     public static final Comparator<Book> BY_PAGE_COUNT = Comparator.comparingInt(Book::getPageCount);
     public static final Comparator<Book> BY_NAME = Comparator.comparing(Book::getName);
@@ -23,6 +14,17 @@ public class Book implements Comparable<Book> {
     private final int pageCount;
     private final String name;
     private final int publicationYear;
+
+    @JsonCreator
+    public Book(
+            @JsonProperty("name") String name,
+            @JsonProperty("pageCount") int pageCount,
+            @JsonProperty("publicationYear") int publicationYear
+    ){
+        this.name = name;
+        this.pageCount = pageCount;
+        this.publicationYear = publicationYear;
+    }
 
     private Book(Builder builder) {
         this.name = builder.name;
@@ -33,10 +35,10 @@ public class Book implements Comparable<Book> {
 
     private void validate() {
         if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("Name can not be empty");
+            throw new IllegalArgumentException("Name cannot be empty");
         }
-        if (publicationYear < 0 || publicationYear > java.time.Year.now().getValue() + 1) {
-            throw new IllegalArgumentException("Publication year must be between 0 and next year");
+        if (publicationYear < 1600 || publicationYear > java.time.Year.now().getValue() + 1) {
+            throw new IllegalArgumentException("Publication year must be between 1600 and next year");
         }
         if (pageCount <= 0) {
             throw new IllegalArgumentException("Page count must be positive");
@@ -92,11 +94,7 @@ public class Book implements Comparable<Book> {
         return "Book{pageCount=" + pageCount + ", name=\"" + name + "\", publicationYear=" + publicationYear + "}";
     }
 
-<<<<<<< HEAD
-    @JsonPOJOBuilder(withPrefix = "")
-=======
 
->>>>>>> b953a2a (Изменена архитектура)
     public static class Builder {
         private int pageCount;
         private String name;
