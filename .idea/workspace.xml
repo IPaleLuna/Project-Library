@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelMergeSortTest.java" afterDir="false" />
+    <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="editing customcollection, evenfieldsortstrategy, deletion of SortStrategy.java">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collections/CustomCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collections/CustomCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/interfaces/SortStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/sorting/EvenFieldSortStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/sorting/EvenFieldSortStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/datasource/temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/search/temp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/sorting/exampleTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,8 +28,7 @@
       </list>
     </option>
   </component>
-
-  <component name="Git.Settings">ns"
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,7 +47,7 @@
     "JUnit.ParallelQuickSortTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Alexander",
+    "git-widget-placeholder": "custom-collections",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/Learning/Projects/Aston/Dream-Team-Project/src/main/resources",
@@ -60,19 +67,6 @@
       <recent name="org.example.sorting" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Dream-Team-Project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Dream-Team-Project" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,5 +77,9 @@
       <updated>1759916960051</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="editing customcollection, evenfieldsortstrategy, deletion of SortStrategy.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing customcollection, evenfieldsortstrategy, deletion of SortStrategy.java" />
   </component>
 </project>
