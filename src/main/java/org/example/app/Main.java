@@ -1,11 +1,5 @@
 package org.example.app;
 
-import org.example.model.Book;
-import org.example.sorting.ParallelMergeSort;
-import org.example.sorting.ParallelQuickSort;
-
-import org.example.sorting.ParallelTimSort;
-import org.example.sorting.Sort;
 import java.util.Scanner;
 
 public class Main {
@@ -30,42 +24,18 @@ public class Main {
                 }
                 case "0" -> {
                     System.out.println("Terminated");
+                    return;
+                }
+                default -> System.out.println("Incorrect, only 1,2 or 0");
+            }
         }
+    }
 
-        System.out.println();
-
-        List<Integer> list2 = new ArrayList<>(Arrays.asList(1, 5, -11, 3, 20, 6, 10, 28));
-
-        ParallelMergeSort mergeSort = new ParallelMergeSort();
-        mergeSort.sort(list2);
-
-        for (int i = 0; i < list2.size(); i++) {
-            System.out.printf(list2.get(i) + " ");
-        }
-
-        System.out.println();
-
-        List<Integer> list3 = new ArrayList<>(Arrays.asList(1, 5, -11, 3, 20, 6, 10, 28));
-
-        ParallelTimSort timSort = new ParallelTimSort();
-        timSort.sort(list3);
-
-        for (int i = 0; i < list3.size(); i++) {
-            System.out.printf(list3.get(i) + " ");
-        }
-
-        System.out.println();
-
-        File file = new File("src/main/resources/books.json");
-        if (!file.exists()) {
-            System.out.println(file.getAbsolutePath());
-
-            return;
-        }
-        List<Book> books = JsonLoader.loadList(file, new TypeReference<>() {});
-
-
-        books.forEach(System.out::println);
-
+    private static void showMenu() {
+        System.out.println("\nSelect an option:");
+        System.out.println("1. Process Books");
+        System.out.println("2. Process Readers");
+        System.out.println("0. Exit");
+        System.out.print("Your choice: ");
     }
 }
