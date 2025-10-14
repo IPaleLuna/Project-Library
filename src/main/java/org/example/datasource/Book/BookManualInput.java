@@ -2,9 +2,11 @@ package org.example.datasource.Book;
 
 import org.example.collections.CustomCollection;
 import org.example.model.Book;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class BookManualInput implements BookDataSource {
 
@@ -19,32 +21,36 @@ public class BookManualInput implements BookDataSource {
             return new CustomCollection<>();
         }
 
-        CustomCollection<Book> books = new CustomCollection<>();
-        for (int i = 0; i < count; i++) {
-            System.out.println("\n--- Book #" + (i + 1) + " ---");
+        AtomicInteger counter = new AtomicInteger(1);
 
-            System.out.print("Name: ");
-            String name = scanner.nextLine().trim();
+        CustomCollection<Book> books = Stream.generate(() -> readValidBook(scanner, counter.getAndIncrement()))
+            .limit(count)
+            .collect(Collectors.toCollection(CustomCollection::new));
+        return books;
+    }
 
-            System.out.print("Page count: ");
-            int pageCount = getInt(scanner);
-
-            System.out.print("Publication year: ");
-            int publicationYear = getInt(scanner);
-
+    private Book readValidBook(Scanner scanner, int i) {
+        while (true) {
             try {
-                Book book = new Book.Builder()
-                        .name(name)
-                        .pageCount(pageCount)
-                        .publicationYear(publicationYear)
-                        .build();
-                books.add(book);
+                System.out.println("\n--- Book #" + i + " ---");
+
+
+                System.out.print("Name: ");
+                String name = scanner.nextLine().trim();
+                System.out.print("Page count: ");
+                int pageCount = getInt(scanner);
+                System.out.print("Publication year: ");
+                int publicationYear = getInt(scanner);
+            
+                return new Book.Builder()
+                    .name(name)
+                    .pageCount(pageCount)
+                    .publicationYear(publicationYear)
+                    .build();
             } catch (IllegalArgumentException e) {
-                System.out.println("Invalid book: " + e.getMessage() + ". Skipping.");
-                i--;
+                System.out.println("Invalid book: " + e.getMessage() + ". Please try again.");
             }
         }
-        return books;
     }
 
     private int getInt(Scanner scanner) {

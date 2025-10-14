@@ -1,5 +1,6 @@
 package org.example.datasource.Reader;
 
+import org.example.collections.CustomCollection;
 import org.example.model.Reader;
 import org.example.util.JsonLoader;
 import tools.jackson.core.type.TypeReference;
@@ -12,7 +13,7 @@ import java.util.Scanner;
 public class ReaderFileInput implements ReaderDataSource {
 
     @Override
-    public List<Reader> generateReaders() {
+    public CustomCollection<Reader> generateReaders() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter file path (default: readers.json): ");
         String filePath = scanner.nextLine().trim();
@@ -23,16 +24,16 @@ public class ReaderFileInput implements ReaderDataSource {
         File file = new File(filePath);
         if (!file.exists()) {
             System.err.println("File not found: " + filePath);
-            return new ArrayList<>();
+            return new CustomCollection<>();
         }
 
         try {
-            List<Reader> readers = JsonLoader.loadList(file, new TypeReference<List<Reader>>() {});
+            CustomCollection<Reader> readers = JsonLoader.loadList(file, new TypeReference<CustomCollection<Reader>>() {});
             System.out.println("Loaded " + readers.size() + " readers from '" + filePath + "'");
             return readers;
         } catch (Exception e) {
             System.err.println("Error loading readers: " + e.getMessage());
-            return new ArrayList<>();
+            return new CustomCollection<>();
         }
     }
 }

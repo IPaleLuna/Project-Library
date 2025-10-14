@@ -1,10 +1,13 @@
 package org.example.datasource.Reader;
 
+import org.example.collections.CustomCollection;
 import org.example.model.Reader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ReaderRandomInput implements ReaderDataSource {
     private static final String[] NAMES = {
@@ -15,28 +18,24 @@ public class ReaderRandomInput implements ReaderDataSource {
     private final Random random = new Random();
 
     @Override
-    public List<Reader> generateReaders() {
+    public CustomCollection<Reader> generateReaders() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("How many random readers to generate? ");
         int count = getInt(scanner);
         if (count <= 0) {
             System.out.println("Count must be positive. Skipping.");
-            return new ArrayList<>();
+            return new CustomCollection<>();
         }
 
-        List<Reader> readers = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            String name = NAMES[random.nextInt(NAMES.length)];
-            int age = random.nextInt(10, 90);
-            String prefix = CARD_PREFIXES[random.nextInt(CARD_PREFIXES.length)];
-            String libraryCardNumber = prefix + (1000 + random.nextInt(9000));
+        CustomCollection<Reader> readers = Stream.generate(() -> 
+        new Reader.Builder()
+            .name(NAMES[random.nextInt(NAMES.length)])
+            .age(random.nextInt(10, 90))
+            .libraryCardNumber(CARD_PREFIXES[random.nextInt(CARD_PREFIXES.length)] + (1000 + random.nextInt(9000)))
+            .build())
+            .limit(count)
+            .collect(Collectors.toCollection(CustomCollection::new));
 
-            readers.add(new Reader.Builder()
-                    .name(name)
-                    .age(age)
-                    .libraryCardNumber(libraryCardNumber)
-                    .build());
-        }
         return readers;
     }
 
