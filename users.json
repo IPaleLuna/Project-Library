@@ -1,0 +1,21 @@
+[ {
+  "name" : "The Lord of the Rings",
+  "pageCount" : 1178,
+  "publicationYear" : 1954
+}, {
+  "name" : "1984",
+  "pageCount" : 328,
+  "publicationYear" : 1949
+}, {
+  "name" : "To Kill a Mockingbird",
+  "pageCount" : 281,
+  "publicationYear" : 1960
+}, {
+  "name" : "The Great Gatsby",
+  "pageCount" : 218,
+  "publicationYear" : 1925
+}, {
+  "name" : "Pride and Prejudice",
+  "pageCount" : 432,
+  "publicationYear" : 1813
+} ]

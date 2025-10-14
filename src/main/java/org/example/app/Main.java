@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.example.app;
 
 import org.example.datasource.Book.BookDataSource;
@@ -20,6 +21,10 @@ import java.util.Comparator;
 import java.util.List;
 =======
 >>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
+=======
+package org.example.app;
+
+>>>>>>> origin/Dev
 import java.util.Scanner;
 
 public class Main {
@@ -68,6 +73,7 @@ public class Main {
         System.out.println("0. Exit");
         System.out.print("Your choice: ");
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     private static void runBookProcessing() {
@@ -249,3 +255,6 @@ public class Main {
 =======
 >>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
 }
+=======
+}
+>>>>>>> origin/Dev

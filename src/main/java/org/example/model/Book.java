@@ -2,10 +2,20 @@ package org.example.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+<<<<<<< HEAD
+=======
+import tools.jackson.databind.annotation.JsonDeserialize;
+import tools.jackson.databind.annotation.JsonPOJOBuilder;
+>>>>>>> origin/Dev
 
 import java.util.Comparator;
 import java.util.Objects;
 
+<<<<<<< HEAD
+=======
+
+@JsonDeserialize(builder = Book.Builder.class)
+>>>>>>> origin/Dev
 public class Book implements Comparable<Book> {
     public static final Comparator<Book> BY_PAGE_COUNT = Comparator.comparingInt(Book::getPageCount);
     public static final Comparator<Book> BY_NAME = Comparator.comparing(Book::getName);
@@ -94,7 +104,11 @@ public class Book implements Comparable<Book> {
         return "Book{pageCount=" + pageCount + ", name=\"" + name + "\", publicationYear=" + publicationYear + "}";
     }
 
+<<<<<<< HEAD
 
+=======
+    @JsonPOJOBuilder(withPrefix = "")
+>>>>>>> origin/Dev
     public static class Builder {
         private int pageCount;
         private String name;

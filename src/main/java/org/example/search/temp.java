@@ -1,5 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package org.example.search;
+=======
+package org.example.search;
+package main.java.org.example.search;
+>>>>>>> origin/Dev
 
 public class temp {
 

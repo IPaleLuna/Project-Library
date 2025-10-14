@@ -1,11 +1,21 @@
 package org.example.model;
 
+<<<<<<< HEAD
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
+=======
+import tools.jackson.databind.annotation.JsonDeserialize;
+import tools.jackson.databind.annotation.JsonPOJOBuilder;
+package model;
+>>>>>>> origin/Dev
 
 import java.util.Comparator;
 import java.util.Objects;
 
+<<<<<<< HEAD
+=======
+@JsonDeserialize(builder = Reader.Builder.class)
+>>>>>>> origin/Dev
 public class Reader implements Comparable<Reader> {
     public static final Comparator<Reader> BY_AGE = Comparator.comparingInt(Reader::getAge);
     public static final Comparator<Reader> BY_NAME = Comparator.comparing(Reader::getName);
@@ -90,7 +100,11 @@ public class Reader implements Comparable<Reader> {
         return "Reader{name='" + name + "', age=" + age + ", libraryCardNumber='" + libraryCardNumber + "'}";
     }
 
+<<<<<<< HEAD
 
+=======
+    @JsonPOJOBuilder(withPrefix = "")
+>>>>>>> origin/Dev
     public static class Builder {
         private int age;
         private String name;

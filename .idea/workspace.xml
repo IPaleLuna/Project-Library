@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookDataSource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookFileInput.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookManualInput.java" afterDir="false" />
@@ -40,6 +41,9 @@
 =======
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
 >>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
+=======
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelMergeSortTest.java" afterDir="false" />
+>>>>>>> origin/Dev
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +51,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/Dev
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -54,9 +62,14 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
 =======
 >>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   <component name="Git.Settings">
+=======
+
+  <component name="Git.Settings">ns"
+>>>>>>> origin/Dev
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -102,6 +115,7 @@
     </key>
 =======
     "Application.Main.executor": "Run",
+<<<<<<< HEAD
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "Setting-up-hierarchy",
@@ -111,11 +125,29 @@
 }]]></component>
   <component name="RecentsManager">
 >>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
+=======
+    "JUnit.ParallelMergeSortTest.executor": "Run",
+    "JUnit.ParallelQuickSortTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Alexander",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Learning/Projects/Aston/Dream-Team-Project/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\resources" />
+    </key>
+>>>>>>> origin/Dev
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\java\com\example" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src" />
     </key>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.model" />
@@ -135,6 +167,11 @@
         </pattern>
       </extension>
 =======
+=======
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.sorting" />
+    </key>
+>>>>>>> origin/Dev
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
