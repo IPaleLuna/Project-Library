@@ -39,4 +39,3 @@ public class JsonLoader {
         return MAPPER.readValue(file, typeReference);
     }
 }
-

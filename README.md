@@ -18,6 +18,6 @@
 git clone ttps://github.com/IPaleLuna/Dream-Team-Project.git
 cd sorting-app
 javac -d bin src/**/*.java
-java -cp bin Main
+java -cp bin org.example.app.Main
 ```
 
