@@ -7,7 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="myproject" />
+<<<<<<< HEAD
         <module name="Dream-Team-Project" />
+=======
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
       </profile>
     </annotationProcessing>
   </component>

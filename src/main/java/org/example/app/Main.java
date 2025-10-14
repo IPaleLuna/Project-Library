@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package org.example.app;
 
 import org.example.datasource.Book.BookDataSource;
@@ -17,6 +18,8 @@ import org.example.sorting.Sort;
 
 import java.util.Comparator;
 import java.util.List;
+=======
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
 import java.util.Scanner;
 
 public class Main {
@@ -29,6 +32,7 @@ public class Main {
             String choice = scanner.nextLine().trim();
 
             switch (choice) {
+<<<<<<< HEAD
                 case "1" -> runBookProcessing();
                 case "2" -> runReaderProcessing();
                 case "0" -> {
@@ -36,6 +40,23 @@ public class Main {
                     return;
                 }
                 default -> System.out.println("Invalid choice. Please enter 0, 1, or 2.");
+=======
+                case "1" -> {
+                    System.out.println("Working with Books...");
+                    //заглушка, сюда потом сортировку/ввод вывод и всё остальное
+                    break;
+                }
+                case "2" -> {
+                    System.out.println("Working with Reader...");
+                    //тож заглушка
+                    break;
+                }
+                case "0" -> {
+                    System.out.println("Terminated");
+                    return;
+                }
+                default -> System.out.println("Incorrect, only 1,2 or 0");
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
             }
         }
     }
@@ -47,6 +68,7 @@ public class Main {
         System.out.println("0. Exit");
         System.out.print("Your choice: ");
     }
+<<<<<<< HEAD
 
     private static void runBookProcessing() {
         System.out.println("\nSelect data source:");
@@ -224,4 +246,6 @@ public class Main {
             }
         }
     }
+=======
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
 }

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookDataSource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookFileInput.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookManualInput.java" afterDir="false" />
@@ -36,12 +37,16 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/books.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/readers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/readers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/temp.java" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -49,12 +54,19 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
+<<<<<<< HEAD
         &quot;associatedIndex&quot;: 6
         }</component>
+=======
+  &quot;associatedIndex&quot;: 6
+}</component>
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   <component name="ProjectId" id="33mKlgUgW3ZfQN78b7c463w4WBu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -63,6 +75,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+<<<<<<< HEAD
     "Application.BookValidationTest.executor": "Run",
     "Application.Main.executor": "Run",
     "JUnit.BookBuilderTest.executor": "Run",
@@ -87,11 +100,23 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\resources" />
     </key>
+=======
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Setting-up-hierarchy",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\java\com\example" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src" />
     </key>
+<<<<<<< HEAD
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org.example.model" />
     </key>
@@ -109,10 +134,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Dream-Team-Project" />
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.app.Main" />
       <module name="Dream-Team-Project" />
@@ -181,6 +213,13 @@
         <item itemvalue="Application.BookValidationTest" />
       </list>
     </recent_temporary>
+=======
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Dream-Team-Project" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+>>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
