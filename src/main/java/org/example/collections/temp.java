@@ -1,4 +1,4 @@
-package main.java.org.example.collections;
+package org.example.collections;
 
 public class temp {
 

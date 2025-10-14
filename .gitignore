@@ -1,28 +1,35 @@
-# Compiled class file
-*.class
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Build artifacts
+target/
+build/
+bin/
 *.jar
 *.war
-*.nar
 *.ear
 *.zip
 *.tar.gz
-*.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/wrapper/maven-wrapper.jar
 
-.vscode/
-/src/main/java/org/example/PaleLuna
-src/main/java/org/example/app/App.java
+# Log files
+*.log
+log/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Other
+out/

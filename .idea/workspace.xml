@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelMergeSortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,18 +34,28 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "Application.Main.executor": "Run",
+    "JUnit.ParallelMergeSortTest.executor": "Run",
+    "JUnit.ParallelQuickSortTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Setting-up-hierarchy",
+    "git-widget-placeholder": "Alexander",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/Learning/Projects/Aston/Dream-Team-Project/src/main/resources",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\java\com\example" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project" />
       <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.sorting" />
     </key>
   </component>
   <component name="RunManager">
