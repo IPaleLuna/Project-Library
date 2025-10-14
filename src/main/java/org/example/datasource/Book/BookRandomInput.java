@@ -1,5 +1,6 @@
 package org.example.datasource.Book;
 
+import org.example.collections.CustomCollection;
 import org.example.model.Book;
 import java.util.ArrayList;
 import java.util.List;
@@ -14,16 +15,16 @@ public class BookRandomInput implements BookDataSource {
     private final Random random = new Random();
 
     @Override
-    public List<Book> generateBooks() {
+    public CustomCollection<Book> generateBooks() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("How many random books to generate? ");
         int count = getInt(scanner);
         if (count <= 0) {
             System.out.println("Count must be positive. Skipping.");
-            return new ArrayList<>();
+            return new CustomCollection<>();
         }
 
-        List<Book> books = new ArrayList<>();
+        CustomCollection<Book> books = new CustomCollection<>();
         for (int i = 0; i < count; i++) {
             String name = TITLES[random.nextInt(TITLES.length)];
             int pageCount = random.nextInt(100, 1001);

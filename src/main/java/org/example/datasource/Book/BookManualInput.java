@@ -1,5 +1,6 @@
 package org.example.datasource.Book;
 
+import org.example.collections.CustomCollection;
 import org.example.model.Book;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,17 +9,17 @@ import java.util.Scanner;
 public class BookManualInput implements BookDataSource {
 
     @Override
-    public List<Book> generateBooks() {
+    public CustomCollection<Book> generateBooks() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("How many books do you want to enter? ");
         int count = getInt(scanner);
         if (count <= 0) {
             System.out.println("Count must be positive. Skipping.");
-            return new ArrayList<>();
+            return new CustomCollection<>();
         }
 
-        List<Book> books = new ArrayList<>();
+        CustomCollection<Book> books = new CustomCollection<>();
         for (int i = 0; i < count; i++) {
             System.out.println("\n--- Book #" + (i + 1) + " ---");
 

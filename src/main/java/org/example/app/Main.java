@@ -1,5 +1,6 @@
 package org.example.app;
 
+import org.example.collections.CustomCollection;
 import org.example.datasource.Book.BookDataSource;
 import org.example.datasource.Book.BookFileInput;
 import org.example.datasource.Book.BookManualInput;
@@ -21,7 +22,6 @@ import java.util.Scanner;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         System.out.println("=== Library Data Processor ===");
         while (true) {
@@ -66,7 +66,7 @@ public class Main {
             }
         };
 
-        List<Book> books;
+        CustomCollection<Book> books;
         try {
             books = source.generateBooks();
             if (books.isEmpty()) {
