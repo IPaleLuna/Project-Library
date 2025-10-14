@@ -1,3 +1,5 @@
+package org.example.app;
+
 import java.util.Scanner;
 
 public class Main {

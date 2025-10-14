@@ -1,8 +1,13 @@
+package org.example.model;
+
+import tools.jackson.databind.annotation.JsonDeserialize;
+import tools.jackson.databind.annotation.JsonPOJOBuilder;
 package model;
 
 import java.util.Comparator;
 import java.util.Objects;
 
+@JsonDeserialize(builder = Reader.Builder.class)
 public class Reader implements Comparable<Reader> {
     public static final Comparator<Reader> BY_AGE = Comparator.comparingInt(Reader::getAge);
     public static final Comparator<Reader> BY_NAME = Comparator.comparing(Reader::getName);
@@ -74,7 +79,7 @@ public class Reader implements Comparable<Reader> {
         return "Reader{name='" + name + "', age=" + age + ", libraryCardNumber='" + libraryCardNumber + "'}";
     }
 
-
+    @JsonPOJOBuilder(withPrefix = "")
     public static class Builder {
         private int age;
         private String name;
