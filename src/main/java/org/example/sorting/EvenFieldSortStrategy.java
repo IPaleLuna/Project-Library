@@ -1,20 +1,17 @@
 package org.example.sorting;
 
-import org.example.interfaces.SortStrategy;
-
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
 
 
-// Стратегия сортировки для чётных значений поля
-public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
+public class EvenFieldSortStrategy<T extends Comparable<? super T>> implements Sort<T> {
     private final String fieldName;
-    private final SortStrategy<T> baseSortStrategy;
+    private final Sort<T> baseSortStrategy;
     private final ExecutorService executor;
 
-    public EvenFieldSortStrategy(String fieldName, SortStrategy<T> baseSortStrategy, ExecutorService executor) {
+    public EvenFieldSortStrategy(String fieldName, Sort<T> baseSortStrategy, ExecutorService executor) {
         this.fieldName = fieldName;
         this.baseSortStrategy = baseSortStrategy;
         this.executor = executor;
@@ -22,6 +19,12 @@ public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
 
     @Override
     public void sort(List<T> list) {
+        // Используем natural ordering
+        sort(list, Comparator.naturalOrder());
+    }
+
+    @Override
+    public void sort(List<T> list, Comparator<T> comparator) {
         try {
             // Создаем задачи для многопоточной сортировки
             List<Callable<Void>> tasks = new ArrayList<>();
@@ -33,13 +36,13 @@ public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
 
             // Задача для первой половины
             tasks.add(() -> {
-                processHalf(firstHalf);
+                processHalf(firstHalf, comparator);
                 return null;
             });
 
             // Задача для второй половины
             tasks.add(() -> {
-                processHalf(secondHalf);
+                processHalf(secondHalf, comparator);
                 return null;
             });
 
@@ -61,7 +64,7 @@ public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
         }
     }
 
-    private void processHalf(List<T> halfList) {
+    private void processHalf(List<T> halfList, Comparator<T> comparator) {
         // Собираем элементы с чётными значениями поля
         List<T> evenElements = new ArrayList<>();
         List<Integer> evenIndices = new ArrayList<>();
@@ -76,7 +79,7 @@ public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
 
         // Сортируем элементы с чётными значениями
         if (!evenElements.isEmpty()) {
-            baseSortStrategy.sort(evenElements);
+            baseSortStrategy.sort(evenElements, comparator);
 
             // Заменяем отсортированные элементы в исходных позициях
             for (int i = 0; i < evenIndices.size(); i++) {
@@ -98,7 +101,9 @@ public class EvenFieldSortStrategy<T> implements SortStrategy<T> {
             } else if (value instanceof Long) {
                 return ((Long) value) % 2 == 0;
             } else if (value instanceof Double) {
-                return ((Double) value) % 2 == 0;
+                // Для double проверяем, является ли целая часть чётной
+                double doubleValue = (Double) value;
+                return ((long) doubleValue) % 2 == 0;
             }
         } catch (Exception e) {
             throw new RuntimeException("Error accessing field: " + fieldName, e);
