@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class BookRandomInput implements BookDataSource {
     private static final String[] TITLES = {
@@ -24,18 +26,20 @@ public class BookRandomInput implements BookDataSource {
             return new CustomCollection<>();
         }
 
-        CustomCollection<Book> books = new CustomCollection<>();
-        for (int i = 0; i < count; i++) {
-            String name = TITLES[random.nextInt(TITLES.length)];
-            int pageCount = random.nextInt(100, 1001);
-            int year = random.nextInt(1600, 2026);
-
-            books.add(new Book.Builder()
-                    .name(name)
-                    .pageCount(pageCount)
-                    .publicationYear(year)
-                    .build());
-        }
+        CustomCollection<Book> books = Stream.generate(() -> {
+        String name = TITLES[random.nextInt(TITLES.length)];
+        int pageCount = random.nextInt(100, 1001);
+        int year = random.nextInt(1600, 2026);
+        
+        return new Book.Builder()
+                .name(name)
+                .pageCount(pageCount)
+                .publicationYear(year)
+                .build();
+        })
+        .limit(count)
+        .collect(Collectors.toCollection(CustomCollection::new));
+        
         return books;
     }
 
