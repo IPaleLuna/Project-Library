@@ -2,6 +2,7 @@ package org.example.model;
 
 import tools.jackson.databind.annotation.JsonDeserialize;
 import tools.jackson.databind.annotation.JsonPOJOBuilder;
+package model;
 
 import java.util.Comparator;
 import java.util.Objects;
