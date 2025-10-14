@@ -1,4 +1,4 @@
-package main.java.org.example.search;
+package org.example.search;
 
 import java.util.ArrayList;
 import java.util.Comparator;

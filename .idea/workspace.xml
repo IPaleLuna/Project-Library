@@ -4,184 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookFileInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookManualInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Book/BookRandomInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Reader/ReaderDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Reader/ReaderFileInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Reader/ReaderManualInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/datasource/Reader/ReaderRandomInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/model/BookTest/BookBuilderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/model/BookTest/BookComparatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/model/BookTest/BookValidationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/model/ReaderTest/ReaderValidationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="125f1202-2a2e-4a3e-bac1-ac39abb400ee" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml.orig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/app/Main.java.orig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collections/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/collections/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/collections/temp.java.orig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Book.java.orig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Reader.java.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/search/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/MultithreadedSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/search/MultithreadedSearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/search/temp.java.orig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/JsonLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/JsonLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/books.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/readers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/readers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/temp.java" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
-=======
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/sorting/ParallelMergeSortTest.java" afterDir="false" />
->>>>>>> origin/Dev
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/Dev
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myproject" />
+      </profile>
+    </annotationProcessing>
   </component>
-<<<<<<< HEAD
-=======
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   <component name="Git.Settings">
-=======
-
-  <component name="Git.Settings">ns"
->>>>>>> origin/Dev
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectColorInfo">{
-<<<<<<< HEAD
-        &quot;associatedIndex&quot;: 6
-        }</component>
-=======
-  &quot;associatedIndex&quot;: 6
-}</component>
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
-  <component name="ProjectId" id="33mKlgUgW3ZfQN78b7c463w4WBu" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.App.executor": "Run",
-<<<<<<< HEAD
-    "Application.BookValidationTest.executor": "Run",
     "Application.Main.executor": "Run",
-    "JUnit.BookBuilderTest.executor": "Run",
-    "JUnit.BookComparatorTest.executor": "Run",
-    "JUnit.BookComparatorTest.testByNameComparator.executor": "Run",
-    "JUnit.ParallelMergeSortTest.executor": "Run",
-    "JUnit.ParallelQuickSortTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "HeadCutterr",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/All_Coding_Zone/Java/Dream-Team-Project",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\resources" />
-    </key>
-=======
-    "Application.Main.executor": "Run",
-<<<<<<< HEAD
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Setting-up-hierarchy",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
-  }
-}]]></component>
-  <component name="RecentsManager">
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
-=======
-    "JUnit.ParallelMergeSortTest.executor": "Run",
-    "JUnit.ParallelQuickSortTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Alexander",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/Learning/Projects/Aston/Dream-Team-Project/src/main/resources",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\resources" />
-    </key>
->>>>>>> origin/Dev
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src\main\java\com\example" />
-      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project" />
-      <recent name="F:\Learning\Projects\Aston\Dream-Team-Project\src" />
-    </key>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.search" />
       <recent name="org.example.model" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.sorting" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="BookValidationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.model.BookTest.BookValidationTest" />
-      <module name="Dream-Team-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.ReaderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-=======
-=======
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.example.sorting" />
-    </key>
->>>>>>> origin/Dev
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Dream-Team-Project" />
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.app.Main" />
       <module name="Dream-Team-Project" />
@@ -195,78 +65,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dream-Team-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.ReaderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model.Book" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.BookTest.BookBuilderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookComparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dream-Team-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.ReaderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model.Book" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.BookTest.BookComparatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookComparatorTest.testByNameComparator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dream-Team-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.ReaderTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model.Book" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.BookTest.BookComparatorTest" />
-      <option name="METHOD_NAME" value="testByNameComparator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BookBuilderTest" />
-        <item itemvalue="JUnit.BookComparatorTest.testByNameComparator" />
-        <item itemvalue="JUnit.BookComparatorTest" />
-        <item itemvalue="Application.BookValidationTest" />
       </list>
     </recent_temporary>
-=======
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="Dream-Team-Project" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
->>>>>>> b953a2a78d2472f980f692763ad3fcd996ad6e35
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="9698a1d6-ff59-48fe-a7eb-5bcbc75a05a9" name="Changes" comment="" />
-      <created>1759916960051</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1759916960051</updated>
-    </task>
     <servers />
   </component>
 </project>
