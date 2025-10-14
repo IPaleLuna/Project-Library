@@ -7,6 +7,7 @@ import tools.jackson.databind.annotation.JsonPOJOBuilder;
 import java.util.Comparator;
 import java.util.Objects;
 
+
 @JsonDeserialize(builder = Book.Builder.class)
 public class Book implements Comparable<Book> {
     public static final Comparator<Book> BY_PAGE_COUNT = Comparator.comparingInt(Book::getPageCount);

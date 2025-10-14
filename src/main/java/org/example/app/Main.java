@@ -6,25 +6,30 @@ import org.example.sorting.ParallelQuickSort;
 
 import org.example.sorting.ParallelTimSort;
 import org.example.sorting.Sort;
-import org.example.util.JsonLoader;
-import tools.jackson.core.type.TypeReference;
-
-import java.io.File;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-        List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 5, -11, 3, 20, 6, 10, 28));
+    private static final Scanner scanner = new Scanner(System.in);
 
-        ParallelQuickSort quickSort = new ParallelQuickSort();
-        quickSort.sort(list1);
+    public static void main(String[] args) {
+        System.out.println("=== Library Data Processor ===");
+        while (true) {
+            showMenu();
+            String choice = scanner.nextLine().trim();
 
-        for (int i = 0; i < list1.size(); i++) {
-            System.out.printf(list1.get(i) + " ");
+            switch (choice) {
+                case "1" -> {
+                    System.out.println("Working with Books...");
+                    //заглушка, сюда потом сортировку/ввод вывод и всё остальное
+                    break;
+                }
+                case "2" -> {
+                    System.out.println("Working with Reader...");
+                    //тож заглушка
+                    break;
+                }
+                case "0" -> {
+                    System.out.println("Terminated");
         }
 
         System.out.println();
