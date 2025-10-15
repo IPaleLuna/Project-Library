@@ -87,7 +87,7 @@ public class Reader implements Comparable<Reader> {
 
     @Override
     public String toString() {
-        return "Reader{name='" + name + "', age=" + age + ", libraryCardNumber='" + libraryCardNumber + "'}";
+        return "Имя: \"" + name + "\", Возраст: " + age + ", Номер читательского билета: \"" + libraryCardNumber + "\"";
     }
 
 

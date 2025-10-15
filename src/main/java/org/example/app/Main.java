@@ -100,16 +100,16 @@ public class Main {
 
         System.out.println("\n--- Sort by ---");
         System.out.println("1. Name");
-        System.out.println("2. Page Count");
-        System.out.println("3. Publication Year");
+        System.out.println("2. Publication Year");
+        System.out.println("3. Page Count");
         System.out.println("4. Default (name → pages → year)");
         System.out.print("Choose sort criterion: ");
         int criterionChoice = getIntInput();
 
         Comparator<Book> comparator = switch (criterionChoice) {
             case 1 -> Book.BY_NAME;
-            case 2 -> Book.BY_PAGE_COUNT;
-            case 3 -> Book.BY_PUBLICATION_YEAR;
+            case 2 -> Book.BY_PUBLICATION_YEAR;
+            case 3 -> Book.BY_PAGE_COUNT;
             case 4 -> Comparator.naturalOrder();
             default -> {
                 System.out.println("Invalid criterion. Using default.");
@@ -345,8 +345,8 @@ public class Main {
                 if (name.isEmpty()) name = "DUMMY";
                 target = new Book.Builder()
                         .name(name)
-                        .pageCount(1)
                         .publicationYear(1600)
+                        .pageCount(1)
                         .build();
                 countComparator = Book.BY_NAME;
             }
@@ -356,8 +356,8 @@ public class Main {
                 if (year < 1600 || year > java.time.Year.now().getValue() + 1) year = 1600;
                 target = new Book.Builder()
                         .name("DUMMY")
-                        .pageCount(1)
                         .publicationYear(year)
+                        .pageCount(1)
                         .build();
                 countComparator = Book.BY_PUBLICATION_YEAR;
             }
@@ -367,8 +367,8 @@ public class Main {
                 if (pages <= 0) pages = 1;
                 target = new Book.Builder()
                         .name("DUMMY")
-                        .pageCount(pages)
                         .publicationYear(1600)
+                        .pageCount(pages)
                         .build();
                 countComparator = Book.BY_PAGE_COUNT;
             }
@@ -379,8 +379,8 @@ public class Main {
                 if (name.isEmpty()) name = "DUMMY";
                 target = new Book.Builder()
                         .name(name)
-                        .pageCount(1)
                         .publicationYear(1600)
+                        .pageCount(1)
                         .build();
                 countComparator = Book.BY_NAME;
             }

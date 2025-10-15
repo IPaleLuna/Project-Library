@@ -18,18 +18,18 @@ public class Book implements Comparable<Book> {
     @JsonCreator
     public Book(
             @JsonProperty("name") String name,
-            @JsonProperty("pageCount") int pageCount,
-            @JsonProperty("publicationYear") int publicationYear
+            @JsonProperty("publicationYear") int publicationYear,
+            @JsonProperty("pageCount") int pageCount
     ){
         this.name = name;
-        this.pageCount = pageCount;
         this.publicationYear = publicationYear;
+        this.pageCount = pageCount;
     }
 
     private Book(Builder builder) {
         this.name = builder.name;
-        this.pageCount = builder.pageCount;
         this.publicationYear = builder.publicationYear;
+        this.pageCount = builder.pageCount;
         validate();
     }
 
@@ -91,7 +91,7 @@ public class Book implements Comparable<Book> {
 
     @Override
     public String toString() {
-        return "Book{pageCount=" + pageCount + ", name=\"" + name + "\", publicationYear=" + publicationYear + "}";
+        return "Название книги: " +"\""+ name + "\", Год публикации: "+ publicationYear + ", Количество страниц: " + pageCount;
     }
 
 
