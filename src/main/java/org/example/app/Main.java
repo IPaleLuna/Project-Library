@@ -13,10 +13,7 @@ import org.example.model.Book;
 import org.example.model.Reader;
 import org.example.search.BinarySearch;
 import org.example.search.MultithreadedSearch;
-import org.example.sorting.ParallelMergeSort;
-import org.example.sorting.ParallelQuickSort;
-import org.example.sorting.ParallelTimSort;
-import org.example.sorting.Sort;
+import org.example.sorting.*;
 import org.example.util.JsonLoader;
 
 import java.io.File;
@@ -120,17 +117,19 @@ public class Main {
             }
         };
 
-        Sort<Book> sortingStrategy = switch (sortChoice) {
-            case 1 -> new ParallelQuickSort<Book>();
-            case 2 -> new ParallelMergeSort<Book>();
-            case 3 -> new ParallelTimSort<Book>();
+        Sorter<Book> sorter = new Sorter<>();
+
+        switch (sortChoice) {
+            case 1 -> sorter.setSort(new ParallelQuickSort<Book>());
+            case 2 -> sorter.setSort(new ParallelMergeSort<Book>());
+            case 3 -> sorter.setSort(new ParallelTimSort<Book>());
             default -> throw new IllegalStateException("Unexpected sort choice");
         };
 
         try {
             System.out.println("\nSorting books...");
             long start = System.currentTimeMillis();
-            sortingStrategy.sort(books, comparator);
+            sorter.sort(books, comparator);
             long end = System.currentTimeMillis();
             System.out.println("Sorted in " + (end - start) + " ms");
             System.out.println("\n Sorted books:");
