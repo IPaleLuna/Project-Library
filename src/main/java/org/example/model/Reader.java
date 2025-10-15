@@ -1,4 +1,7 @@
-package model;
+package org.example.model;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Comparator;
 import java.util.Objects;
@@ -11,6 +14,19 @@ public class Reader implements Comparable<Reader> {
     private final int age;
     private final String name;
     private final String libraryCardNumber;
+
+
+    @JsonCreator
+    public Reader(
+            @JsonProperty("name") String name,
+            @JsonProperty("age") int age,
+            @JsonProperty("libraryCardNumber") String libraryCardNumber
+    ) {
+        this.name = name;
+        this.age = age;
+        this.libraryCardNumber = libraryCardNumber;
+        validate();
+    }
 
     private Reader(Builder builder) {
         this.name = builder.name;
