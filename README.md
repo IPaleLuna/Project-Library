@@ -48,15 +48,7 @@ This project is a Java application for working with collections of books and rea
 
 Go to the **Packages** section of our repository and download the pre-built application.
 
-### Building from Source
-
+### Project launch
+Go to the project directory and open cmd, and then write the following command:
 ```bash
-# Clone the repository
-git clone https://github.com/IPaleLuna/Dream-Team-Project.git
-cd Dream-Team-Project
-
-# Compile the project
-javac -d bin src/**/*.java
-
-# Run the application
-java -cp bin Main
+java -jar Project-Lib.jar
