@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)
+![Java](https://img.shields.io/badge/Java-24%2B-orange?style=for-the-badge&logo=java)
 ![Multithreading](https://img.shields.io/badge/Multithreading-✓-blue?style=for-the-badge)
 
 **Сервис для управления коллекциями книг и читателей с расширенными возможностями сортировки и поиска**
