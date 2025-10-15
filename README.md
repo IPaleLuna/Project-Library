@@ -40,7 +40,9 @@
 
 <div align="center">
 
-[📦 **Download Latest Release**](https://github.com/IPaleLuna/Dream-Team-Project/packages)
+[![Latest Release](https://img.shields.io/badge/🎯_Скачать_последнюю_версию-8A2BE2?style=for-the-badge&logo=github)](https://github.com/IPaleLuna/Dream-Team-Project/releases/latest)
+
+**Перейдите в раздел [Releases](https://github.com/IPaleLuna/Dream-Team-Project/releases) чтобы скачать готовое приложение**
 
 </div>
 
