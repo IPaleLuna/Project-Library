@@ -4,7 +4,6 @@
 
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)
 ![Multithreading](https://img.shields.io/badge/Multithreading-✓-blue?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-Packages-lightgrey?style=for-the-badge&logo=github)
 
 **A service for managing book and reader collections with advanced sorting and search capabilities**
 
