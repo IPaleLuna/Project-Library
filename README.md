@@ -6,57 +6,57 @@
 ![Multithreading](https://img.shields.io/badge/Multithreading-✓-blue?style=for-the-badge)
 ![GitHub](https://img.shields.io/badge/GitHub-Packages-lightgrey?style=for-the-badge&logo=github)
 
-**Сервис для управления коллекциями книг и читателей с расширенными возможностями сортировки и поиска**
+**A service for managing book and reader collections with advanced sorting and search capabilities**
 
 </div>
 
-## 📖 Описание
+## 📖 Description
 
-Проект представляет собой Java-приложение для работы с коллекциями книг и читателей. Реализованы алгоритмы сортировки и поиска с использованием многопоточности для оптимальной производительности.
+This project is a Java application for working with collections of books and readers. It implements sorting and search algorithms using multithreading for optimal performance.
 
-## 🚀 Возможности
+## 🚀 Features
 
-### 📥 Заполнение коллекций
-- **Ручной ввод** данных через интуитивный интерфейс
-- **Импорт из JSON** файлов
-- **Генерация случайных данных** для тестирования
+### 📥 Populating Collections
+- **Manual input** via an intuitive interface
+- **Import from JSON** files
+- **Random data generation** for testing
 
-### ⚡ Алгоритмы сортировки
-- **Быстрая сортировка** (Quick Sort)
-- **Сортировка слиянием** (Merge Sort)  
-- **Гибридная сортировка** с оптимизацией производительности
-- *Многопоточная реализация* для максимальной скорости
+### ⚡ Sorting Algorithms
+- **Quick Sort**
+- **Merge Sort**
+- **Hybrid Sort** with performance optimization
+- *Multithreaded implementation* for maximum speed
 
-### 🔍 Поиск и анализ
-- **Бинарный поиск** по отсортированным коллекциям
-- **Подсчет вхождений** с использованием многопоточности
+### 🔍 Search and Analysis
+- **Binary Search** on sorted collections
+- **Occurrence counting** using multithreading
 
-### 💾 Сохранение результатов
-- **Экспорт в JSON** на различных этапах обработки
+### 💾 Saving Results
+- **Export to JSON** at various processing stages
 
-## 📦 Установка
+## 📦 Installation
 
-### Скачать приложение
+### Download the Application
 
 <div align="center">
 
-[![Latest Release](https://img.shields.io/badge/🎯_Скачать_последнюю_версию-8A2BE2?style=for-the-badge&logo=github)](https://github.com/IPaleLuna/Dream-Team-Project/releases/latest)
+[![Latest Release](https://img.shields.io/badge/🎯_Download_Latest_Release-8A2BE2?style=for-the-badge&logo=github)](https://github.com/IPaleLuna/Dream-Team-Project/releases/latest)
 
-**Перейдите в раздел [Releases](https://github.com/IPaleLuna/Dream-Team-Project/releases) чтобы скачать готовое приложение**
+**Visit the [Releases](https://github.com/IPaleLuna/Dream-Team-Project/releases) section to download the ready-to-use application**
 
 </div>
 
-Перейдите в раздел **Packages** нашего репозитория и скачайте готовую сборку приложения.
+Go to the **Packages** section of our repository and download the pre-built application.
 
-### Сборка из исходного кода
+### Building from Source
 
 ```bash
-# Клонирование репозитория
+# Clone the repository
 git clone https://github.com/IPaleLuna/Dream-Team-Project.git
 cd Dream-Team-Project
 
-# Компиляция проекта
+# Compile the project
 javac -d bin src/**/*.java
 
-# Запуск приложения
+# Run the application
 java -cp bin Main
