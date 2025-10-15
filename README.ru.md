@@ -48,15 +48,8 @@
 
 Перейдите в раздел **Packages** нашего репозитория и скачайте готовую сборку приложения.
 
-### Сборка из исходного кода
-
+### Запуск проекта
+Перейдите в директорию с проектом и откройте cmd, а затем пропишите следующую команду:
 ```bash
-# Клонирование репозитория
-git clone https://github.com/IPaleLuna/Dream-Team-Project.git
-cd Dream-Team-Project
-
-# Компиляция проекта
-javac -d bin src/**/*.java
-
-# Запуск приложения
-java -cp bin Main
+java -jar Project-Lib.jar
+```
